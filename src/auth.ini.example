@@ -1,0 +1,10 @@
+[mysql]
+user = ******
+password = *****
+host= ******
+database=****
+
+[api]
+mpan = *****
+msn = *****
+auth = Basic *******==
