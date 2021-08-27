@@ -12,3 +12,6 @@
 
 NB: You can adjust how far you want to go back by manipulation the param in the URL in the api.PY file (period_from=)
 
+# example 
+    Here is an example of how i am using grafana to display the information in a graph on home assistant
+    
