@@ -15,3 +15,4 @@ NB: You can adjust how far you want to go back by manipulation the param in the 
 # example 
     Here is an example of how i am using grafana to display the information in a graph on home assistant
     
+![image](https://user-images.githubusercontent.com/12627412/131188958-a58974a4-794d-48d2-be7f-94b3174fb1ff.png)
