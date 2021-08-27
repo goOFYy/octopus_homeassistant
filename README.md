@@ -1,4 +1,4 @@
-# octopus_homeassistant
+# Octopus Homeassistant
 
 # Introduction
     This is a small automation script to puld meter data from Octopus Energie's website ( if you have a smart Meter) and stores it in a MYSQL database ( MariaDB in home assistant)
