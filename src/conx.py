@@ -24,9 +24,26 @@ def clean(args):
     c.commit()
     close_cnx(c,cursor)
 
-def insert( args, values):
+def insert(args, values):
     c, cursor = cnx (args)
     query = 'insert into octopus ( consumption, date) Values ( + "' + str(values[0]) +'" , "' + str(values[1]) +'")'
+    print(query)
+    cursor.execute(query)
+    c.commit()
+    close_cnx(c,cursor)
+
+def select_all(args):
+    c, cursor = cnx (args)
+    query = 'SELECT * From octopus'
+
+    cursor.execute(query)
+    myresult = cursor.fetchall()
+    close_cnx(c,cursor)
+    return myresult
+
+def insert_daily(args, cost, date):
+    c, cursor = cnx (args)
+    query = 'insert into octopus_daily ( date , cost) Values ( + "' + str(date) +'" , "' + str(cost) +'")'
     print(query)
     cursor.execute(query)
     c.commit()

@@ -6,7 +6,7 @@
 1. install Docker
 2. Setup MariaDB On home Assistant ( or any MYSQL DB)
 3. Generate Octopus Energy API keys and get the relevant Meter Info
-4. From Auth.ini.example Create Auth.ini with the right Credentials and information
+4. From Auth.ini.example Create Auth.ini with the right Credentials and information ( low and high Rates)
 5. Docker build and run 
 6. EVERY 30 minutes the database will be updated with latest info from Octopus (dating back to yesterday 00:00) 
 

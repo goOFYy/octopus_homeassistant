@@ -8,3 +8,8 @@ database=****
 mpan = *****
 msn = *****
 auth = Basic *******==
+
+
+[rate]
+low = 5
+high = 15
