@@ -35,6 +35,6 @@ def cost(args):
     print(str(total) + ' £')
     
   
-    conx.insert_daily(args,date.today(),total)
+    conx.insert_daily(args,total,date.today())
     
 
