@@ -9,8 +9,8 @@ def cost(args):
 
     config= configparser.RawConfigParser()
     config.read(args)
-    l=int(config.get('rate','low'))
-    h=int(config.get('rate','high'))
+    l=float(config.get('rate','low'))
+    h=float(config.get('rate','high'))
     rows=conx.select_all(args)
     low=0
     high=0
@@ -35,4 +35,4 @@ def cost(args):
     print(str(total) + ' £')
     
   
-    conx.insert_daily(args,total,datetime.today())
+    conx.insert_daily(args,total,date.today())
