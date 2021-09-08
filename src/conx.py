@@ -41,9 +41,9 @@ def select_all(args):
     close_cnx(c,cursor)
     return myresult
 
-def insert_daily(args, cost, date):
+def insert_daily(args, cost, date,cons):
     c, cursor = cnx (args)
-    query = 'insert into octopus_daily ( date , cost) Values ( + "' + str(date) +'" , "' + str(cost) +'")'
+    query = 'insert into octopus_daily ( date , cost, consumption) Values ( + "' + str(date) +'" , "' + str(cost) +'", "' + str(cons) +'")'
     print(query)
     cursor.execute(query)
     c.commit()
