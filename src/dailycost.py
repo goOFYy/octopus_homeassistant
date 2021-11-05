@@ -18,7 +18,7 @@ def cost(args):
     i=0
     consumption=0
     for x in rows :
-        t =x[2].split('T')[1].split('+')[0]
+        t =x[2].split('T')[1].split('+')[0].split('Z')[0]
         d1=datetime.strptime('20:30:00', '%H:%M:%S' ).time()
         d2=datetime.strptime('01:30:00', '%H:%M:%S' ).time()
         d3=datetime.strptime('23:59:00', '%H:%M:%S' ).time()
